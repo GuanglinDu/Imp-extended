@@ -7,15 +7,15 @@ File imp.zsh-theme is Igor Moura's original one, which I used as a template.
 
 Follow the [oh-my-zsh instructions](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization#overriding-and-adding-themes) or run the following:
 ```
-  mkdir -p $ZSH_CUSTOM/themes &&
-  symbols="ampersand asterisk at-sign close-brace close-bracket close-parenthesis " \
-          "colon dollar exclamation-mark greater-than hash less-than open-brace " \
-          "open-bracket open-parenthesis percent-sign pipe plus question-mark " \
-          "semicolon tilde" &&
-  for symbol in $symbols &&
-  do &&
-  curl https://raw.githubusercontent.com/GuanlginDu/Imp-extended/master/imp-"$symbol".zsh-theme -L -o $ZSH_CUSTOM/themes/imp-"$symbol".zsh-theme &&
-  done
+mkdir -p $ZSH_CUSTOM/themes &&
+symbols="ampersand asterisk at-sign close-brace close-bracket close-parenthesis " \
+        "colon dollar exclamation-mark greater-than hash less-than open-brace " \
+        "open-bracket open-parenthesis percent-sign pipe plus question-mark " \
+        "semicolon tilde" &&
+for symbol in $symbols &&
+do &&
+curl https://raw.githubusercontent.com/GuanlginDu/Imp-extended/master/imp-"$symbol".zsh-theme -L -o ZSH_CUSTOM/themes/imp-"$symbol".zsh-theme &&
+done
 ```
 Then set the theme in your **.zshrc** file. By default, the pipe theme is selected.
 Modify according to your case.
