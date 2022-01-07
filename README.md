@@ -5,9 +5,11 @@ File imp.zsh-theme is Igor Moura's original one, which I used as a template.
 
 ## Installation
 
-Follow the [oh-my-zsh instructions](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization#overriding-and-adding-themes) or run the following:
+1. Follow the [oh-my-zsh instructions](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization#overriding-and-adding-themes) to install oh-my-zsh;
+2. Follow the [Imp instructions](https://github.com/igormp/Imp) to install and configure the Imp theme;
+3. And then run the following to install more prompt options:
 ```
-mkdir -p $ZSH_CUSTOM/themes
+mkdir -p $ZSH_CUSTOM/themes &&
 for s1 in ampersand asterisk at-sign close-brace close-bracket close-parenthesis colon dollar exclamation-mark greater-than hash less-than open-brace open-bracket open-parenthesis percent-sign pipe plus question-mark semicolon tilde; do curl https://raw.githubusercontent.com/GuanglinDu/Imp-extended/master/imp-"$s1".zsh-theme -L -o "$ZSH_CUSTOM"/themes/imp-"$s1".zsh-theme; done
 ```
 Then set the theme in your **.zshrc** file. By default, the pipe theme is selected.
