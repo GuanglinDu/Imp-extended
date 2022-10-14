@@ -57,10 +57,7 @@ conda_python_version_info() {
 
 function retcode() {}
 
-# Alternate prompt with git & hg
-# Note: Use %% to print a literal % in zsh
-# 20221011: Moves the conda::python prompt to right instead of at the beginning
-# with function conda_python_version_info().
+# alternate prompt with git & hg
 PROMPT=$'%{\e[0;34m%}%B┌─[%b%{\e[0m%}%{\e[1;32m%}%n%{\e[1;30m%}\e[0;34m%}%B@%b%{\e[0m%}%{\e[0;36m%}%B%m%b%{\e[0;34m%}%B][%b%{\e[0;34m%}%b%{\e[1;37m%}%~%{\e[0;34m%}%B]%b%{\e[0m%}$(mygit)$(hg_prompt_info)$(conda_python_version_info)
-%{\e[0;34m%}%B└%%%b'
+%{\e[0;34m%}%B└─|%b'
 PS2=$' \e[0;34m%}%B>%{\e[0m%}%b '

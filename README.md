@@ -39,4 +39,27 @@ ZSH_THEME="imp-pipe"
 #ZSH_THEME="imp-semicolon"
 #ZSH_THEME="imp-tilde"
 ```
-And enjoy so many prompt symbol options!
+
+4. To support Conda env and Python version info elegantly, install the imp-conda*.zsh-themes. Five themes are available at present: imp-conda, imp-conda-dollar, imp-conda-has, imp-conda-percent-sign, and imp-conda-pipe.
+```
+mkdir -p $ZSH_CUSTOM/themes &&
+curl https://raw.githubusercontent.com/GuanglinDu/Imp-extended/master/imp-conda.zsh-theme -L -o "$ZSH_CUSTOM"/themes/imp-conda.zsh-theme &&
+for s1 in conda-dollar conda-hash conda-percent-sign conda-pipe; do curl https://raw.githubusercontent.com/GuanglinDu/Imp-extended/master/imp-"$s1".zsh-theme -L -o "$ZSH_CUSTOM"/themes/imp-"$s1".zsh-theme; done
+```
+Then set the theme in your **.zshrc** file. By default, the pipe theme is selected.
+Modify according to your case.
+
+```
+#ZSH_THEME="imp"
+#ZSH_THEME="imp-dollar"
+#ZSH_THEME="imp-hash"
+ZSH_THEME="imp-percent-sign"
+#ZSH_THEME="imp-pipe"
+```
+
+In your ~/.condarc (create if it doesnt' exist), add the following line to disable Conda to change the environment varible PS1.
+```
+changeps1: False
+```
+
+Enjoy a slew of the elegant Oh-my-zsh prompt themes every beautiful day!

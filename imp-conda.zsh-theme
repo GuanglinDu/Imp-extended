@@ -30,7 +30,7 @@ function mygit() {
   if [[ "$(git config --get oh-my-zsh.hide-status)" != "1" ]]; then
     ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
     ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
-    echo "%B[${ref#refs/heads/}$(git_prompt_short_sha)$(git_prompt_status)" \
+    echo "%B[${ref#refs/heads/}$(git_prompt_short_sha)$( git_prompt_status)" \
          "\b%{$reset_color%}%b%B]%b"
   fi
 }
@@ -57,10 +57,7 @@ conda_python_version_info() {
 
 function retcode() {}
 
-# Alternate prompt with git & hg
-# Note: Use %% to print a literal % in zsh
-# 20221011: Moves the conda::python prompt to right instead of at the beginning
-# with function conda_python_version_info().
+# alternate prompt with git & hg
 PROMPT=$'%{\e[0;34m%}%B┌─[%b%{\e[0m%}%{\e[1;32m%}%n%{\e[1;30m%}\e[0;34m%}%B@%b%{\e[0m%}%{\e[0;36m%}%B%m%b%{\e[0;34m%}%B][%b%{\e[0;34m%}%b%{\e[1;37m%}%~%{\e[0;34m%}%B]%b%{\e[0m%}$(mygit)$(hg_prompt_info)$(conda_python_version_info)
-%{\e[0;34m%}%B└%%%b'
+%{\e[0;34m%}%B└─▪%b'
 PS2=$' \e[0;34m%}%B>%{\e[0m%}%b '
