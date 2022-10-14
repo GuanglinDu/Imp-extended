@@ -5,7 +5,7 @@ File imp.zsh-theme is Igor Moura's original one, which I used as a template.
 
 20221014: Beautiful Conda env and Python version info support was added. It's after the Git info on the first prompt line. This feature is based on [taw-ys.zsh-theme](https://github.com/lyytaw/taw-ys.zsh-theme). These new themes work correctly even if there exists no Conda.
 
-![Imp-conda-theme-demo](imp-conda-theme-demo.png)
+![Imp Conda theme demo](imp-conda-theme-demo.png)
 
 ## Installation
 
