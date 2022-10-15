@@ -3,9 +3,9 @@
 Themes based on [Imp](https://github.com/igormp/Imp) to provide more prompt symbol options.
 File imp.zsh-theme is Igor Moura's original one, which I used as a template.
 
-20221014: Beautiful Conda env and Python version info support was added. It's after the Git info on the first prompt line. This feature is based on [taw-ys.zsh-theme](https://github.com/lyytaw/taw-ys.zsh-theme). These new themes work correctly even if there exists no Conda.
+20221014: Beautiful conda env and Python version info support was added. It's after the Git info on the first prompt line. This feature is based on [taw-ys.zsh-theme](https://github.com/lyytaw/taw-ys.zsh-theme). These new themes work correctly even if there exists no conda.
 
-![Imp Conda theme demo](imp-conda-theme-demo.png)
+![Imp conda theme demo](imp-conda-theme-demo.png)
 
 ## Installation
 
@@ -44,7 +44,7 @@ ZSH_THEME="imp-pipe"
 #ZSH_THEME="imp-tilde"
 ```
 
-4. To support Conda env and Python version info elegantly, install the imp-conda*.zsh-themes. Five themes are available at present: imp-conda, imp-conda-dollar, imp-conda-has, imp-conda-percent-sign, and imp-conda-pipe.
+4. To support conda env and Python version info elegantly, install the imp-conda*.zsh-themes. Five themes are available at present: imp-conda, imp-conda-dollar, imp-conda-has, imp-conda-percent-sign, and imp-conda-pipe.
 ```
 mkdir -p $ZSH_CUSTOM/themes &&
 curl https://raw.githubusercontent.com/GuanglinDu/Imp-extended/master/imp-conda.zsh-theme -L -o "$ZSH_CUSTOM"/themes/imp-conda.zsh-theme &&
@@ -61,9 +61,9 @@ ZSH_THEME="imp-percent-sign"
 #ZSH_THEME="imp-pipe"
 ```
 
-In your ~/.condarc (create if it doesnt' exist), add the following line to disable Conda to change the environment varible PS1.
+In your ~/.condarc (create if it doesn't exist), add the following line to disable conda to change the environment varible PS1.
 ```
 changeps1: False
 ```
 
-Enjoy a slew of the elegant Oh-my-zsh prompt themes every beautiful day!
+Enjoy a slew of the elegant Oh-my-zsh prompt themes on your on your every beautiful day!
