@@ -54,11 +54,11 @@ Then set the theme in your **.zshrc** file. By default, the pipe theme is select
 Modify according to your case.
 
 ```
-#ZSH_THEME="imp"
-#ZSH_THEME="imp-dollar"
-#ZSH_THEME="imp-hash"
-ZSH_THEME="imp-percent-sign"
-#ZSH_THEME="imp-pipe"
+#ZSH_THEME="imp-conda"
+#ZSH_THEME="imp-conda-dollar"
+#ZSH_THEME="imp-conda-hash"
+ZSH_THEME="imp-conda-percent-sign"
+#ZSH_THEME="imp-conda-pipe"
 ```
 
 In your ~/.condarc (create if it doesn't exist), add the following line to disable conda to change the environment varible PS1.
